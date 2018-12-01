@@ -1,6 +1,10 @@
 class Composite 
+  def initialize
+    @sub = []
+  end
+  
   def <<(elm)
-    (@sub ||= []) << elm
+    @sub << elm
   end
   
   def each
